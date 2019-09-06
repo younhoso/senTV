@@ -15,7 +15,7 @@
     <meta name="Author" content=""/>
     <meta name="robots" content="">
     <meta name="format-detection" content="telephone=no">
-    <script type="text/javascript" src="/assets/javascripts/lib/jquery-1.8.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
     <script type="text/javascript" src="/assets/javascripts/lib/jquery-ui.min.js"></script>
     <script type="text/javascript" src="/assets/javascripts/lib/slick.js"></script>
     <script type="text/javascript" src="/assets/javascripts/lib/jquery.simplyscroll.js"></script>
@@ -1068,51 +1068,6 @@
       autoplaySpeed: 5000,
       arrow:false
     });
-
-
-$(document).ready(function(){
-    // 핫클립 tab 영역
-    var ButtonHighlight = function(index){
-		$('.btn').eq(0).removeClass('tab-active');
-        $('.btn').eq(1).removeClass('tab-active');
-		$('.btn').eq(index).addClass('tab-active');
-    }
-    
-	// 핫클립 tab 영역
-	var TabHighlights = function (index){
-		$('.tab-content').eq(0).fadeOut(100);
-        $('.tab-content').eq(1).fadeOut(100);
-		$('.tab-content').eq(index).fadeIn(100);
-    }
-    
-    // 4개 항목 tab 영역
-    var ButtonHighlight2 = function(index){
-		$('.btn4').eq(0).removeClass('tab-active');
-        $('.btn4').eq(1).removeClass('tab-active');
-        $('.btn4').eq(2).removeClass('tab-active');
-        $('.btn4').eq(3).removeClass('tab-active');
-		$('.btn4').eq(index).addClass('tab-active');
-    }
-
-    // 4개 항목 tab 영역
-	var TabHighlights2 = function (index){
-		$('.tab-content4').eq(0).fadeOut(100);
-        $('.tab-content4').eq(1).fadeOut(100);
-        $('.tab-content4').eq(2).fadeOut(100);
-        $('.tab-content4').eq(3).fadeOut(100);
-		$('.tab-content4').eq(index).fadeIn(100);
-    }
-
-    $('.tab-set').on('click',function(e){
-		ButtonHighlight(e.target.dataset.id);
-		TabHighlights(e.target.dataset.id);
-    });
-    
-    $('.tab-set2').on('click',function(e){
-		ButtonHighlight2(e.target.dataset.id);
-		TabHighlights2(e.target.dataset.id);
-	});
-});
 </script>
 </body>
 </html>

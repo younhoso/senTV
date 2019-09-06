@@ -2,6 +2,7 @@
 .sub .left_sec {width: 800px; float: left; margin-right: 45px;}
 /* 오른쪽 공통 영역 */
 .sub .right_sec {width: 355px; float: left;}
+.right_sec .vod_list_slide {height: 170px; overflow: hidden;}
 
 
 /* sub_news 오른쪽*/
