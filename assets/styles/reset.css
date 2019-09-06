@@ -1,0 +1,65 @@
+/* reset
+@charset "UTF-8";
+*/
+
+@font-face {
+font-family: 'notoKrL';
+font-style: normal;
+font-weight: 100;
+src: local('Noto Sans Light'), local('NotoSans-Light'), url(../../font/NotoSans-Light.eot);
+src: url(../../font/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+url(../../font/NotoSans-Light.woff2) format('woff2'),
+url(../../font/NotoSans-Light.woff) format('woff');;
+}
+@font-face {
+font-family: 'notoKrR';
+font-style: normal;
+font-weight: 300;
+src: local('Noto Sans Regular'), local('NotoSans-Regular'), url(../../font/NotoSans-Regular.eot);
+src: url(../../font/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+url(../../font/NotoSans-Regular.woff2) format('woff2'),
+url(../../font/NotoSans-Regular.woff) format('woff');
+}
+@font-face {
+font-family: 'notoKrM';
+font-style: normal;
+font-weight: 500;
+src: local('Noto Sans Medium'), local('NotoSans-Medium'), url(../../font/NotoSans-Medium.eot);
+src: url(../../font/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+url(../../font/NotoSans-Medium.woff2) format('woff2'),
+url(../../font/NotoSans-Medium.woff) format('woff');
+}
+@font-face {
+font-family: 'notoKrB';
+font-style: normal;
+font-weight: 700;
+src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(../../font/NotoSans-Bold.eot);
+src: url(../../font/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
+url(../../font/NotoSans-Bold.woff2) format('woff2'),
+url(../../font/NotoSans-Bold.woff) format('woff');
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,button 
+{margin:0;padding:0;font-weight: normal; vertical-align:baseline;}
+fieldset,img {border:0 none}
+dl,ul,ol,menu,li {list-style:none;}
+blockquote, q {quotes:none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {font-size:100%;vertical-align:middle}
+button {border:0 none;background-color:transparent;cursor:pointer}
+table {border-collapse:collapse;border-spacing:0}
+body {-webkit-text-size-adjust:none; margin:0;} /* 뷰표트 변환시 폰트크기 자동확대 방지 */
+input[type='text'],input[type='password'],input[type='submit'],input[type='search'] {-webkit-appearance:none; border-radius:0}
+input:checked[type='checkbox'] {background-color:#666; -webkit-appearance:checkbox}
+button,input[type='button'],input[type='submit'],input[type='reset'],input[type='file'] {-webkit-appearance:button; border-radius:0}
+input[type='search']::-webkit-search-cancel-button {-webkit-appearance:none}
+body {background:#fff; line-height:100%;}
+body,th,td,input,select,textarea,button {font-size:14px; line-height: 18px; font-family: 'notoKrR', 'notoKrL', 'notoKrM', 'notoKrB', sans-serif;} /* color값은 디자인가이드에 맞게사용 */
+a {color:#5f5f5f; text-decoration:none;}
+a:active, a:hover {text-decoration:none;}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal;}
+legend{display:none;}
+input:focus, button:focus{outline:none;} /*크롬 파란테두리 없애기*/
+textarea{resize:none; outline:none;}
+::selection {background: #394679; color: #fff; text-shadow: none;}
+::-moz-selection {background: #394679; color: #fff; text-shadow: none;}
+::-webkit-selection {background: #394679; color: #fff; text-shadow: none;}

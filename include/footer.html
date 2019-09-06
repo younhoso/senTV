@@ -1,0 +1,56 @@
+<div class="top_area">
+    <div class="inner_wrap">
+        <div class="notice">
+            <div class="tit">공지사항</div>
+            <ul id="notice_list" class="notice_list">
+                <li><a href="#" target="_blank">2018년 10월 13일 홈페이지 점검으로 인하여 이용에 제한이 있을 수 있습니다</a></li>
+                <li><a href="#" target="_blank">공지사항입니다 확인해주세요</a></li>
+                <li><a href="#" target="_blank">테스트입니다 공지사항입니다</a></li>
+            </ul>
+        </div>
+        <ul class="sns_area">
+            <li><a href="#"><img src="/assets/images/common/ico_sns_facebook.png" alt="페이스북"/></a></li>
+            <li><a href="#"><img src="/assets/images/common/ico_sns_twitter.png" alt="트위터"/></a></li>
+            <li><a href="#"><img src="/assets/images/common/ico_sns_youtube.png" alt="유튜브"/></a></li>
+        </ul>
+    </div>
+</div>
+<div class="footer_cont">
+    <div class="inner_wrap">
+        <div class="logo">
+            <img src="/assets/images/common/footer_logo.png" alt="SEN 서울경제TV"/>
+        </div>
+        <div class="info_wrap">
+            <div class="utils">
+                <a href="#" target="_blank" class="f_link">회사소개</a>
+                <a href="#" target="_blank" class="f_link tin">개인보호정책</a>
+                <a href="#" target="_blank" class="f_link">서비스약관</a>
+                <a href="#" target="_blank" class="f_link">광고 및 제휴 안내</a>
+                <span class="f_link"><a href="#" target="_blank">고객센터</a> 1577-7451</span>
+                <a href="#" target="_blank" class="f_link">사이트맵</a>
+            </div>
+            <p class="info">
+                서울특별시 마포구 월드컵북로 400 문화콘텐츠센터 3, 4, 9층 서울경제TV SEN  서울특별시 종로구 율곡로 6,
+                트윈트리빌딩 비동 16층(중학동)<br />
+                고객센터 : 1577-7451 &nbsp;&nbsp; 사업자등록번호 : 107-81-84028 &nbsp;&nbsp;
+                통신판매업신고번호 : 제 2018-서울종로-0855호 &nbsp;&nbsp; 대표자 성명 : 이상석<br />
+                Copyright 2012 ⓒ 서울경제티브이 Corp. All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    // notice 세로 슬라이드
+    var noticeSlide = function(){
+        setTimeout(function(){
+            $('#notice_list li:first').animate( {marginTop: '-45px'}, 400, function(){
+                $(this).detach().appendTo('ul#notice_list').removeAttr('style');
+            });
+            //재귀함수 기법 setTimeout 함수 안에서 자기 자신 함수를 호출(실행)하면 무한대로 반복한다.
+            noticeSlide(); 
+        }, 3000);
+    };
+    //외부에서 함수를 호출(실행)하면 한번만 실행하고 끝난다.
+    noticeSlide();
+</script>
